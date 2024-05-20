@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>.zt to PDF Converter</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ZT to PDF Converter</title>
 </head>
 <body>
-    <h1>.zt to PDF Converter</h1>
-    <input type="file" id="ztFile" accept=".zt">
-    <button onclick="convertToPdf()">Convert</button>
-    <script src="script.js"></script>
+    <h1>ZT to PDF Converter</h1>
+    <form action="/convert" method="POST" enctype="multipart/form-data">
+        <input type="file" name="ztFile" accept=".zt" required>
+        <button type="submit">Convert to PDF</button>
+    </form>
 </body>
 </html>
